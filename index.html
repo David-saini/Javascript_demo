@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- if & else -->
+    <div>
+        <h1 class="fs-25px">if & else</h1>
+        <script>
+            var a = 10;
+            a < 2
+                ? document.write("Abcd")
+                : document.write("abcd")
+
+            a > 2
+                ? document.write("Abcd")
+                : document.write("abcd")
+
+            a = 10
+                ? document.write("LAKSHAY")
+                : document.write("sachin")
+        </script>
+    </div>
+
+    <!-- Switch statement -->
+    <div>
+        <h1 class="fs-25px">Switch statement</h1>
+        <script>
+            let Month;
+            switch (new Date().getMonth()) {
+
+                case 0:
+                    document.write("JAN")
+                    break;
+                case 1:
+                    document.write("FEB")
+                    break;
+                case 2:
+                    document.write("MAR")
+                    break;
+                case 3:
+                    document.write("APRIL")
+                    break;
+                case 4:
+                    document.write("MAY")
+                    break;
+                case 5:
+                    document.write("JUN")
+                    break;
+                case 6:
+                    document.write("JUL")
+                    break;
+                case 7:
+                    document.write("AUG")
+                    break;
+                case 8:
+                    document.write("SEP")
+                    break;
+                case 9:
+                    document.write("OCT")
+                    break;
+                case 10:
+                    document.write("NOV")
+                    break;
+                case 11:
+                    document.write("DEC")
+                    break;
+
+                default:
+                    break;
+            }
+        </script>
+    </div>
+
+    <!-- function in js -->
+    <div>
+        <h1>functions in js</h1>
+        <script>
+            function myIntro() {
+                document.write("my name is lakshay");
+                document.write("<br>");
+                document.write("I am studying in forntend development");
+                document.write("<br>");
+                document.write("And now I am working in REACT JS");
+                document.write("<br>");
+
+            }
+            myIntro();
+            myIntro();
+
+        </script>
+    </div>
+
+    <!-- for Loop -->
+    <div>
+        <h1>For Loop</h1>
+        <script>
+            const month = ["Jan", "feb", "Mar", "Apr", "May", "jun", "Jul", "Aug", "sep", "Oct", "Nov", "Dec"]
+
+            let text = "";
+            for (let i = 0; i < month.length; i++) {
+                text += month[i] + "<br>";
+            }
+            document.write(text);
+        </script>
+
+        <script>
+            for (let a = 1; a <= 11; a++) {
+                if (a % 2 === 0)
+                    document.write(a + "<br>");
+            }
+        </script>
+
+        <script>
+            for (let a = 1; a <= 11; a++) {
+                if (a % 2 !== 0)
+                    document.write(a + "<br>");
+            }
+        </script>
+    </div>
+
+    <!-- wheel Loop -->
+    <div>
+        <h1>Wheel loop</h1>
+        <script>
+            let i = 1;
+            while (i < 12) {
+                document.write(i + "<br>");
+                i++;
+            }
+        </script>
+    </div>
+
+
+    <!--do wheel loop-->
+    <div>
+        <h1>Do Wheel loop</h1>
+        <script>
+            {
+                let a = 1;
+                do {
+                    document.write(a + "<br>");
+                    a++;
+                } while (a <= 5)
+            }
+        </script>
+
+        <script>
+
+            let password
+            do {
+                password = prompt("what is the password");
+            } while (password !== "lakshay");
+
+        </script>
+    </div>
+
+
+</body>
+
+</html>
